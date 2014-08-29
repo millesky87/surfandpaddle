@@ -1,0 +1,20 @@
+*{border: solid red 1px; }
+
+header {background-image: url("http://upload.wikimedia.org/wikipedia/commons/2/20/Red_Slate_Mountain_1.jpg");
+background-repeat: no-repeat;
+-webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+width: 1300px;
+height: 520px;
+}
+.rightblock {float: right;
+  position: static;
+  top: 0;
+  right: 0;
+}
+ul { display: inline-block;}
+
+.mountains {text-align: center;
+}

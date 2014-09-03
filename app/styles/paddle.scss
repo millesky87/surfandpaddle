@@ -1,0 +1,361 @@
+$title-font: Oswald, sans-serif;
+
+$body-font: open sans, sans-serif;
+$light-blue: #2d7fbc;
+$p-size: 14px;
+
+@mixin comment-layout { background-color: rgb(163, 179, 191);
+  padding-right: 5px;
+  padding-top: 3px;
+  padding-bottom:7px;
+  font-family: $font-body;
+  color: white;
+}
+
+@mixin icon-hover { background-color: rgb(16, 109, 179);
+  transition-duration: 1s; }
+
+
+header { background: linear-gradient(
+  rgba(16, 109, 179, .75),
+  rgba(26, 109, 179, .75)),
+  url("http://upload.wikimedia.org/wikipedia/commons/2/20/Red_Slate_Mountain_1.jpg");
+  -webkit-background-size: cover;
+  position: relative;
+  height: 520px;
+}
+
+.leftblock{ float: left;
+  position: absolute;
+  left: 140px;}
+
+.wave { height: 45px;
+  width: 45px;
+}
+
+.afterwave {font-size: 15px;
+  font: $body-font;
+  position: relative;
+  bottom: 10px;
+
+}
+.rightblock { float: right;
+  position: absolute;
+  right: 160px;
+  top: 0;
+}
+
+.rightblock ul { display: inline-block;
+  font-size: 18px;
+  font-family: $body-font;
+  color: black;
+  position: relative;
+  bottom: 5px;
+}
+
+.glass { height: 20px;
+  width:20px;}
+
+.mountains {text-align: center;
+  height: 7.5em;
+  margin-top: 95px;
+  position: relative;
+  top: 150px;
+}
+
+h1 { font-size: 6.95em;
+  font-family: $title-font;
+  font-weight: 300;
+  color: white;
+  letter-spacing: 15px;
+
+
+}
+
+h2 { font-size: 18px;
+  font-family: $body-font;
+  position: relative;
+  bottom: 85px;}
+
+
+.content { height: 1155px;
+}
+
+.columnleft { height: 1000px;
+  width: 615px;
+  float: left;
+  margin-left: 230px;
+}
+
+h3 { font-size: 60px;
+  font-family: $title-font;
+  color: rgb(0, 50, 83);
+  line-height: 1.2;
+  top: 70px;
+}
+
+.afterheader { position: relative;
+bottom: 60px;}
+
+
+.tiny {
+  width: 22px;
+  height: 22px;
+  border-radius: 11px;
+  display: inline-block;
+  position: relative;
+}
+
+.tiny:before {
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 255, 255, .5);
+  transition: all .3s linear;
+}
+
+.tiny:hover {
+  background-color: blue;
+}
+
+.anne { font-size: 12px;
+  font-family: $body-font;
+  color: rgb(0, 104, 182);
+}
+
+.on { font-size: 12px;
+  font-family: $body-font;
+  color: rgb(160, 179, 192);
+}
+
+.date { font-size: 12px;
+  font-family: $body-font;
+  color: rgb(160, 179, 192);
+  position: relative;
+  left: 5px;
+}
+
+.p1 { font-size: $p-size;
+  font-family: $body-font;
+  line-height: 1.6;
+  position: relative;
+  bottom: 40px;
+  letter-spacing: 1px;
+}
+
+.p2 { font-size: $p-size;
+  height: 70px;
+  font: $body-font;
+  line-height: 1.6;
+  position: relative;
+  bottom: 15px;
+  letter-spacing: 1px;
+}
+
+.p2 u{ color: rgb(189, 200, 209);}
+.p2 u:hover{color: rgb(16, 109, 179);
+  transition-duration: 1s; }
+
+.woah { vertical-align: middle;
+  position: relative;
+  bottom:18px;
+  height: 45px;
+  font-size: 25px;
+  font-family: $body-font;
+  color: $light-blue;
+  border-left: solid rgb(160, 179, 192) 2px;
+  padding: -0 18px 0 20px;
+}
+
+.p3 { font-size: $p-size;
+  font-family: $body-font;
+  line-height: 1.6;
+  letter-spacing: 1px;
+}
+
+.ar { color: rgb(189, 200, 209);}
+
+.ar:hover { color: rgb(16, 109, 179);
+  transition-duration: 1s; }
+
+
+.p4 { font-size: $p-size;
+  font-family: $body-font;
+  line-height: 1.6;
+  letter-spacing: 1px;
+  position: relative;
+  top: 10px;
+}
+
+.comments { position: relative;
+  top: 6px;
+}
+
+.smallicon {
+  display: inline-block;
+  background-color: rgb(77, 88, 96);
+  width: 33px;
+  height: 30px;
+  vertical-align: middle;
+  text-decoration: none;}
+
+.smallicon:hover { background-color: rgb(8, 52, 82);
+  transition-duration: 1s
+}
+
+.a1 { @include comment-layout
+}
+
+.a2 { @include comment-layout
+}
+
+.a3 { @include comment-layout
+}
+
+.a1:hover { @include icon-hover
+}
+
+.a2:hover { @include icon-hover
+}
+
+.a3:hover { @include icon-hover
+}
+
+
+.rightcolumn { float: right;
+  height:750px;
+  width: 279px;
+  vertical-align: top;
+  position: relative;
+  right: 205px;
+  top: 80px;
+}
+
+.top { height: 84px;
+  width: 84px;
+  background-image: url("http://lorempixel.com/100/100/");
+  background-size: cover;
+  border-radius: 42px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.annem { text-align: center;
+  font-size: 14px;
+  font-family: $font-body;
+  color: rgb(0, 104, 182);
+  letter-spacing: 4px;
+  position: relative;
+}
+
+.socialsites { text-align: center;
+  margin-top: -10px;
+}
+
+.twitter {
+  padding: 0 11px 0 0;
+  margin: 0 5px 0 0;
+  border-right: solid rgb(173, 187, 199) 2px;
+}
+
+.facebook {
+  padding: 0 3px 0 0;
+  border-right: solid rgb(173, 187, 199) 2px;
+}
+
+.midcolumn { margin-top: 55px;
+}
+
+.about {
+  position: absolute;
+  top: 501px;
+  right: 0;
+  font-size: 12px;
+}
+
+
+
+.centerpic {height: 300px;
+  width: 278px;
+}
+
+h5 { font-size: 15px;
+  font-family: $font-body;
+  color: $light-blue;
+}
+
+.sidebar { font-family: $font-body }
+
+.sidebar u { color: rgb(189, 200, 209);}
+
+.sidebar u:hover { color: rgb(16, 109, 179);
+  transition-duration: 1s; }
+
+.bhead { clear: both;
+  bottom: 30px;
+}
+
+.pic4 div {
+  height: 330px;
+  width: 24.5%;
+  float: left;
+  bottom: 60px;
+}
+
+.one { background-image: url("http://lorempixel.com/400/400/");
+  position: relative;}
+
+.two { background-image: url("http://lorempixel.com/350/360/");
+  position: relative;}
+
+.three { background-image: url("http://lorempixel.com/370/500/");
+  position: relative;}
+
+.four { background-image: url("http://lorempixel.com/400/470/");
+  position: relative;}
+
+.imgpost { font-size: 30px;
+  font-family: $title-font;
+  color: rgb(0, 50, 83);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.footer { clear: both;
+  width: 100%;
+  height: 100px;
+  background-color: rgb(0, 51, 83);
+  position: relative;
+  bottom: 60px;
+}
+
+.iron { margin-left: 225px;
+  margin-top: 20px;
+  width: 27%;
+  position: relative;
+}
+
+.yard { height: 50px;
+  width: 60px;
+}
+
+.copyright { font-size: 14px;
+  color: rgb(134, 155, 171);
+  position: absolute;
+  top: 20px;
+}
+
+.navbar { float: right;
+  position: absolute;
+  width: 25%;
+  right: 172px;
+  bottom: 42px;
+}
+
+.navbar a { font-size: 14px;
+  color: rgb(134, 155, 171);
+}
